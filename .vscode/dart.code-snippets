@@ -1,0 +1,138 @@
+{
+  // GoRouter系
+  "GoRouter": {
+    "prefix": ["router", "gorouter"],
+    "body": [
+      "GoRoute(",
+      "      path: '/${path_name}',",
+      "      name: '${path_name}',",
+      "      pageBuilder: (context, state) {",
+      "        return MaterialPage(",
+      "          key: state.pageKey,",
+      "          child: // TODO: IMPLEMENT HERE,",
+      "        );",
+      "      },",
+      "    ),"
+    ],
+    "description": "GoRouterの雛形"
+  },
+
+  // freezed系
+  "freezed for state class": {
+    "prefix": ["fstate", "freezed", "freezedstate"],
+    "body": [
+      "import 'package:flutter/foundation.dart';",
+      "import 'package:freezed_annotation/freezed_annotation.dart';",
+      "",
+      "part '${TM_FILENAME_BASE}.freezed.dart';",
+      "",
+      "@freezed",
+      "class ${class_name} with _\\$${class_name} {",
+      "  const factory ${class_name}({",
+      "    required String id,",
+      "  }) = _${class_name};",
+      "}",
+      ""
+    ],
+    "description": "State用のFreezedの雛形"
+  },
+  "freezed for json class": {
+    "prefix": ["fjson", "freezed", "freezedjson"],
+    "body": [
+      "import 'package:flutter/foundation.dart';",
+      "import 'package:freezed_annotation/freezed_annotation.dart';",
+      "",
+      "part '${TM_FILENAME_BASE}.freezed.dart';",
+      "part '${TM_FILENAME_BASE}.g.dart';",
+      "",
+      "@freezed",
+      "class ${class_name} with _\\$${class_name} {",
+      "  const factory ${class_name}({",
+      "    required String id,",
+      "  }) = _${class_name};",
+      "  ",
+      "  factory ${class_name}.fromJson(Map<String, dynamic> json) => _\\$${class_name}FromJson(json);",
+      "}",
+      ""
+    ],
+    "description": "json用のFreezedの雛形"
+  },
+
+  // Provider系
+  "Riverpod Class Provider": {
+    "prefix": "riv-class",
+    "body": [
+      "import 'package:riverpod_annotation/riverpod_annotation.dart';",
+      "",
+      "part '${TM_FILENAME_BASE}.g.dart';",
+      "",
+      "@riverpod",
+      "class ${1:ProviderName} extends _$${1:ProviderName} {",
+      "  @override",
+      "  ${2:ReturnType} build() {",
+      "    $0",
+      "  }",
+      "}"
+    ],
+    "description": "Create a class-based Riverpod provider with imports"
+  },
+  "Riverpod Future Provider": {
+    "prefix": "riv-future",
+    "body": [
+      "import 'package:riverpod_annotation/riverpod_annotation.dart';",
+      "",
+      "part '${TM_FILENAME_BASE}.g.dart';",
+      "",
+      "@riverpod",
+      "Future<${1:ReturnType}> ${2:providerName}(${2:ProviderName}Ref ref) async {",
+      "  $0",
+      "}"
+    ],
+    "description": "Create a Future Riverpod provider with imports"
+  },
+  "Riverpod Stream Provider": {
+    "prefix": "riv-stream",
+    "body": [
+      "import 'package:riverpod_annotation/riverpod_annotation.dart';",
+      "",
+      "part '${TM_FILENAME_BASE}.g.dart';",
+      "",
+      "@riverpod",
+      "Stream<${1:ReturnType}> ${2:providerName}(${2:ProviderName}Ref ref) async* {",
+      "  $0",
+      "}"
+    ],
+    "description": "Create a Stream Riverpod provider with imports"
+  },
+  "Riverpod Value Provider": {
+    "prefix": "riv-value",
+    "body": [
+      "import 'package:riverpod_annotation/riverpod_annotation.dart';",
+      "",
+      "part '${TM_FILENAME_BASE}.g.dart';",
+      "",
+      "@riverpod",
+      "${1:ReturnType} ${2:providerName}(${2:ProviderName}Ref ref) {",
+      "  $0",
+      "}"
+    ],
+    "description": "Create a value Riverpod provider with imports"
+  },
+
+  // Widget系
+  "SizedBoxHeight": {
+    "prefix": ["sh", "height", "sizedboxheight", "sizedbox"],
+    "body": ["SizedBox(height: ${height}),"],
+    "description": "高さだけのSizedBox"
+  },
+  "SizedBoxWidth": {
+    "prefix": ["sw", "width", "sizedboxwidth", "sizedbox"],
+    "body": ["SizedBox(width: ${width}),"],
+    "description": "幅だけのSizedBox"
+  },
+  "SizedBox": {
+    "prefix": ["sizedbox", "sb"],
+    "body": ["SizedBox(", "  height: $height,", "  width: $width,", "),"],
+    "description": "幅と高さのSizedBox"
+  }
+}
