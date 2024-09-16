@@ -19,6 +19,13 @@
 
 です。
 
+## デモ動画
+
+
+
+https://github.com/user-attachments/assets/824e9908-dca4-496f-ae68-2d7e7eb81c33
+
+
 
 ## 資料
 
