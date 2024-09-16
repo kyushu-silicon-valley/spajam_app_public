@@ -1,16 +1,23 @@
-# spajam_app
+# AIのとも
+![アプリアイコン](./_src/logo_orange_0915110015.png)
 
-A new Flutter project.
+![スライド](./_src/img.png)
+## このリポジトリについて
+[Spajam2024 第4回九州予選](https://spajam.jp/)にてチーム「Nova5」が企画・開発したアプリケーション「AIのとも」のソースコードを公開するリポジトリです。
 
-## Getting Started
+開発時にコミット履歴やコードの一部にAPIキーが含まれたため念の為新規リポジトリでの公開としています。
 
-This project is a starting point for a Flutter application.
+## アプリケーション概要
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## 資料
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+[当日発表スライド](https://drive.google.com/file/d/1j7q1XPtnWSwX1kKWIUGfTk2wkzQ2UUOJ/view?usp=sharing)
+
+このスライドの作成は[irusiru](https://irusiru.jp/)を利用して作成した雛形を加筆修正したものです。
+
+一部素材には[canva](https://www.canva.com/)と[unDraw](https://undraw.co/)を利用しています。
+
+## 技術構成
+
+
