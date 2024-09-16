@@ -93,4 +93,29 @@ erDiagram
     }
 ```
 
+## 実行方法
+1. `.env`の作成
+プロジェクトルートに`.env`を作成（`.env.sample`にあるキーを準備)
 
+2. `translator_key`の作成
+プロジェクトルートに`translator_key`というファイルを作成し以下の内容にする。
+```
+{
+    "deepl" : "ここにDeepLのAPIキーを記入する"
+}
+```
+
+
+3. プロジェクトルートのディレクトリにて`make init`を実行する
+makeが使えない方は以下のコマンドを順に実行
+```
+flutter clean
+flutter pub get
+dart run auto_translator
+flutter gen-l10n
+dart run build_runner build --delete-conflicting-outputs
+```
+
+4. 実行する
+以下のどちらでも実行できます。
+`make dev` または`flutter run`
